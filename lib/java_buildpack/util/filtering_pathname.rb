@@ -88,7 +88,7 @@ module JavaBuildpack
 
       # @see Pathname.
       def +(other)
-        filtered_pathname(@pathname + other)
+        filtered_pathname(@pathname + other.to_s)
       end
 
       # @see Pathname.
